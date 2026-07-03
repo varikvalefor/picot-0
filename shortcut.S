@@ -218,8 +218,3 @@
 #define	PWM_IRQx_INTE_OFFSET(x)	0x0F8 + x * 0xC
 #define	PWM_IRQx_INTF_OFFSET(x)	0x0FC + x * 0xC
 #define	PWM_IRQx_INTS_OFFSET(x)	0x100 + x * 0xC
-
-.globl start
-.section text
-start:
-mov	%rax,	PWM_CHx_DIV_OFFSET(5)
