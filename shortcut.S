@@ -120,10 +120,10 @@
 #define	INTERPx_ACCUMy_OFFSET(x,y)	0x080 + 0x40 * x + 4 * y
 #define	INTERPx_BASEy_OFFSET(x,y)	0x088 + 0x40 * x + 4 * y
 #define	INTERPx_POP_LANEy_OFFSET(x,y)	0x094 + 0x40 * x + 4 * y
-#define	INTERPx_POP_FULL_OFFSET	0x09C + 0x40 * x
+#define	INTERPx_POP_FULL_OFFSET(x)	0x09C + 0x40 * x
 #define	INTERPx_PEEK_LANEy_OFFSET(x,y)	0x0A0 + 0x40 * x + 4 * y
 #define	INTERPx_CTRL_LANEy_OFFSET(x,y)	0x0AC + 0x40 * x + 4 * y
-#define	INTERPx_PEEK_FULL_OFFSET	0x0A8 + 0x40 * x
+#define	INTERPx_PEEK_FULL_OFFSET(x)	0x0A8 + 0x40 * x
 #define	INTERPx_ACCUMy_ADD_OFFSET(x,y)	0x0B4 + 0x40 * x + 4 * y
 #define	INTERPx_BASE_1AND0_OFFSET(x)	0x0BC + 0x40 * x
 # ni'o la .varik. cu pilno la'oi .Haskell. tu'a le me'oi .SPINLOCK. pagbu
