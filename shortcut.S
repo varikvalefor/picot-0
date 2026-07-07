@@ -396,6 +396,7 @@
 
 # 12.5.3 DS
 #define	PWM_CHx_CSR_OFFSET(x)	x * 0x14
+
 #define	PWM_CSR_PH_ADV_BIT	7
 #define	PWM_CSR_PH_RET_BIT	6
 #define	PWM_CSR_PH_DIVMODE_DIV_BITS	0x0
@@ -407,6 +408,7 @@
 #define	PWM_CSR_PH_A_INV_BIT	2
 #define	PWM_CSR_PH_CORRECT_BIT	1
 #define	PWM_CSR_PH_EN_BIT	0
+
 #define	PWM_CHx_DIV_OFFSET(x)	4 + x * 0x14
 #define	PWM_DIV_INT_OFFSET	4
 #define	PWM_DIV_FRAC_OFFSET	0
