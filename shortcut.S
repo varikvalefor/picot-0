@@ -199,21 +199,21 @@
 #define	PSM_FRCE_OFF_OFFSET	0x4
 #define	PSM_WDSEL_OFFSET	0x8
 #define	PSM_DONE_OFFSET	0xC
-#define	PSM_FRCE_ON_PROCx_BIT(x)	1<<(23 + x)
-#define	PSM_ACCESSCTRL_BIT	1<<22
-#define	PSM_SIO_BIT	1<<21
-#define	PSM_SIP_BIT	1<<20
-#define	PSM_SRAMx_BIT(x)	1<<(10 + x)
-#define	PSM_BOOTRAM_BIT	1<<9
-#define	PSM_ROM_BIT	1<<8
-#define	PSM_BUSFABRIC_BIT	1<<7
-#define	PSM_READY_BIT	1<<6
-#define	PSM_CLOCKS_BIT	1<<5
-#define	PSM_RESETS_BIT	1<<4
-#define	PSM_XOSC_BIT	1<<3
-#define	PSM_ROSC_BIT	1<<2
-#define	PSM_OTP_BIT	1<<1
-#define	PSM_PROC_COLD_BIT	1<<0
+#define	PSM_FRCE_ON_PROCx_BIT(x)	23 + x
+#define	PSM_ACCESSCTRL_BIT	22
+#define	PSM_SIO_BIT	21
+#define	PSM_SIP_BIT	20
+#define	PSM_SRAMx_BIT(x)	10 + x
+#define	PSM_BOOTRAM_BIT	9
+#define	PSM_ROM_BIT	8
+#define	PSM_BUSFABRIC_BIT	7
+#define	PSM_READY_BIT	6
+#define	PSM_CLOCKS_BIT	5
+#define	PSM_RESETS_BIT	4
+#define	PSM_XOSC_BIT	3
+#define	PSM_ROSC_BIT	2
+#define	PSM_OTP_BIT	1
+#define	PSM_PROC_COLD_BIT	0
 
 # 7.5.3 DS
 #define	RESETS_RESET_OFFSET	0x0
@@ -285,6 +285,8 @@
 #define	CLOCKS_CLK_NDFT_CTRL_KILL_BIT	10
 #define	CLOCKS_CLK_NDFT_CTRL_AUXSRC_BIT	5
 
+#define	CLOCKS_CLK_DFT_CTRL_SRC_BIT	1
+
 #define	CLOCKS_CLKSRC_PLL_SYS	0x0
 #define	CLOCKS_CLKSRC_GPIN0	0x1
 #define	CLOCKS_CLKSRC_GPIN1	0x2
@@ -303,16 +305,16 @@
 
 # 12.5.3 DS
 #define	PWM_CHx_CSR_OFFSET(x)	x * 0x14
-#define	PWM_CSR_PH_ADV_BIT	1<<7
-#define	PWM_CSR_PH_RET_BIT	1<<6
+#define	PWM_CSR_PH_ADV_BIT	7
+#define	PWM_CSR_PH_RET_BIT	6
 #define	PWM_CSR_PH_DIVMODE_DIV	0x0<<4
 #define	PWM_CSR_PH_DIVMODE_LEVEL	0x1<<4
 #define	PWM_CSR_PH_DIVMODE_RISE	0x2<<4
 #define	PWM_CSR_PH_DIVMODE_FALL	0x3<<4
-#define	PWM_CSR_PH_B_INV_BIT	1<<3
-#define	PWM_CSR_PH_A_INV_BIT	1<<2
-#define	PWM_CSR_PH_CORRECT_BIT	1<<1
-#define	PWM_CSR_PH_EN_BIT	1<<0
+#define	PWM_CSR_PH_B_INV_BIT	3
+#define	PWM_CSR_PH_A_INV_BIT	2
+#define	PWM_CSR_PH_CORRECT_BIT	1
+#define	PWM_CSR_PH_EN_BIT	0
 #define	PWM_CHx_DIV_OFFSET(x)	4 + x * 0x14
 #define	PWM_DIV_INT_OFFSET	4
 #define	PWM_DIV_FRAC_OFFSET	0
