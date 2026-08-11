@@ -534,3 +534,22 @@
 #define	DMA_CHx_AL3_WRITE_ADDR_OFFSET(x)	0x034 + 0x40 * x
 #define	DMA_CHx_AL3_TRANS_COUNT_OFFSET(x)	0x038 + 0x40 * x
 #define	DMA_CHx_AL2_READ_ADDR_TRIG_OFFSET(x)	0x03C + 0x40 * x
+#define	DMA_INTR_OFFSET	0x400
+#define	DMA_INTEx_OFFSET(x)	0x404 + 0x10 * x
+#define	DMA_INTFx_OFFSET(x)	0x408 + 0x10 * x
+#define	DMA_INTSx_OFFSET(x)	0x40C + 0x10 * x
+#define	DMA_TIMERx_OFFSET(x)	0x440 + 0x04 * x
+#define	DMA_MULTI_CHAN_TRIGGER_OFFSET	0x450
+#define	DMA_SNIFF_CTRL	0x454
+#define	DMA_SNIFF_DATA	0x458
+#define	DMA_FIFO_LEVELS	0x460
+#define	DMA_CHAN_ABORT	0x464
+#define	DMA_N_CHANNELS	0x464
+#define	DMA_SECCFG_CHx_OFFSET(x)	0x480 + 0x04 * x
+#define	DMA_SECCFG_IRQx_OFFSET(x)	0x4C0 + 0x04 * x
+#define	DMA_SECCFG_MISC_OFFSET	0x4D0
+#define	DMA_MPU_CTRL_OFFSET	0x500
+#define	DMA_MPU_BARx_OFFSET(x)	0x504 + 0x08 * x
+#define	DMA_MPU_LARx_OFFSET(x)	0x508 + 0x08 * x
+#define	DMA_CHx_DBG_CTDREQ_OFFSET(x)	0x800 + 0x40 * x
+#define	DMA_CHx_DBG_TCR_OFFSET(x)	0x804 + 0x40 * x
