@@ -478,3 +478,19 @@
 #define	PWM_IRQx_INTE_OFFSET(x)	0x0F8 + x * 0xC
 #define	PWM_IRQx_INTF_OFFSET(x)	0x0FC + x * 0xC
 #define	PWM_IRQx_INTS_OFFSET(x)	0x100 + x * 0xC
+
+# 12.6.10 DS
+#define	DMA_CHx_READ_ADDR_OFFSET(x)	0x000 + 0x40 * x
+#define	DMA_CHx_WRITE_ADDR_OFFSET(x)	0x004 + 0x40 * x
+#define	DMA_CHx_TRANS_COUNT_OFFSET(x)	0x008 + 0x40 * x
+#define	DMA_CHx_CTRL_TRIG_OFFSET(x)	0x00C + 0x40 * x
+#define	DMA_CHx_ALz_CTRL_OFFSET(x,z)	0x000 + 0x40 * x + 0x10 * z
+#define	DMA_CHx_AL1_READ_ADDR_OFFSET(x)	0x014 + 0x40 * x
+#define	DMA_CHx_AL1_WRITE_ADDR_OFFSET(x)	0x018 + 0x40 * x
+#define	DMA_CHx_AL1_TRANS_COUNT_TRIG_OFFSET(x)	0x01C + 0x40 * x
+#define	DMA_CHx_AL2_TRANS_COUNT_OFFSET(x)	0x024 + 0x40 * x
+#define	DMA_CHx_AL2_READ_ADDR_OFFSET(x)	0x028 + 0x40 * x
+#define	DMA_CHx_AL2_WRITE_ADDR_TRIG_OFFSET(x)	0x02C + 0x40 * x
+#define	DMA_CHx_AL3_WRITE_ADDR_OFFSET(x)	0x034 + 0x40 * x
+#define	DMA_CHx_AL3_TRANS_COUNT_OFFSET(x)	0x038 + 0x40 * x
+#define	DMA_CHx_AL2_READ_ADDR_TRIG_OFFSET(x)	0x03C + 0x40 * x
